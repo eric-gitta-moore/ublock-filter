@@ -39,9 +39,11 @@ rou.video##.mb-6.mt-2.lg\:gap-8.gap-4.lg\:grid-cols-4.grid-cols-2.grid
 rou.video##div.justify-center.flex:nth-of-type(6)
 
 
+! ============ 字节内网
 internal-api-security.larkoffice.com
 mcs-bd.feishu.cn/v1/list
 bytedance.larkoffice.com##div.suite-clear[style*="image/svg+xml;base64"]
+! ============ 字节内网
 
 
 ! ============ 阿里内网
