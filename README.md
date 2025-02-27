@@ -27,7 +27,6 @@ www.itdog.cn##.gg_link.mt-3.col-12
 ! Aug 11, 2024 https://ping.chinaz.com
 ping.chinaz.com##span > .mt10.wrapper
 
-*.mmstat.com
 
 ! Nov 4, 2024 https://www.fi-ads.com
 www.fi-ads.com##.clearfix.mhlleset > .mhlleset
@@ -62,6 +61,7 @@ ione.alibaba-inc.com##div:matches-attr(id="/mask_div\d+/")
 /office-cn-.*.imm.aliyuncs.com##path[d~='M 0 0 L 2560 0 L 2560 1440 L 0 1440 L 0 0 Z']:remove()
 aidc-corehr.alibaba-inc.com###__waterMark__
 ihave.alibaba-inc.com/rpc/watermark/generateWatermark.json
+*.mmstat.com
 ! =============== 阿里内网结束
 
 ! Jan 18, 2025 https://nga.178.com
