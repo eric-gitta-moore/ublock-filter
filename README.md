@@ -43,6 +43,9 @@ rou.video##div.justify-center.flex:nth-of-type(6)
 internal-api-security.larkoffice.com
 mcs-bd.feishu.cn/v1/list
 bytedance.larkoffice.com##div.suite-clear[style*="image/svg+xml;base64"]
+bytedance.larkoffice.com##div[style*="image/svg+xml;base64"][style*="fixed"]
+lf3-short.ibytedapm.com/slardar/fe/sdk-web/browser.cn.js?bid=lark_watermark&globalName=_lmp_slardar_client_lark_watermark
+slardar-bd.feishu.cn/monitor_browser/collect/batch/
 ! ============ 字节内网
 
 
@@ -92,6 +95,4 @@ icp.chinaz.com##.pb10.clearfix.ToolsWrapIM.wrapper02
 icp.chinaz.com##.clearfix.wrapperTopBtm
 icp.chinaz.com##span > .wrapperTopBtm
 icp.chinaz.com##.bg-white.auto.fotatxtd
-
-
 ```
