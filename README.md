@@ -27,6 +27,7 @@ www.itdog.cn##.gg_link.mt-3.col-12
 ! Aug 11, 2024 https://ping.chinaz.com
 ping.chinaz.com##span > .mt10.wrapper
 
+*.mmstat.com
 
 ! Nov 4, 2024 https://www.fi-ads.com
 www.fi-ads.com##.clearfix.mhlleset > .mhlleset
@@ -41,8 +42,9 @@ rou.video##div.justify-center.flex:nth-of-type(6)
 ! ============ 字节内网
 internal-api-security.larkoffice.com
 mcs-bd.feishu.cn/v1/list
-bytedance.larkoffice.com##div.suite-clear[style*="image/svg+xml;base64"]
-bytedance.larkoffice.com##div[style*="image/svg+xml;base64"][style*="fixed"]
+/.*.larkoffice.com/##div[style*="image/svg+xml;"][style*="fixed"]
+/.*.bytedance.net/##div[style*="image/svg+xml;"][style*="fixed"]
+/.*.feishuapp.cn/##div[style*="image/svg+xml;"][style*="fixed"]
 lf3-short.ibytedapm.com/slardar/fe/sdk-web/browser.cn.js?bid=lark_watermark&globalName=_lmp_slardar_client_lark_watermark
 slardar-bd.feishu.cn/monitor_browser/collect/batch/
 ! ============ 字节内网
@@ -61,7 +63,6 @@ ione.alibaba-inc.com##div:matches-attr(id="/mask_div\d+/")
 /office-cn-.*.imm.aliyuncs.com##path[d~='M 0 0 L 2560 0 L 2560 1440 L 0 1440 L 0 0 Z']:remove()
 aidc-corehr.alibaba-inc.com###__waterMark__
 ihave.alibaba-inc.com/rpc/watermark/generateWatermark.json
-*.mmstat.com
 ! =============== 阿里内网结束
 
 ! Jan 18, 2025 https://nga.178.com
@@ -95,4 +96,6 @@ icp.chinaz.com##.pb10.clearfix.ToolsWrapIM.wrapper02
 icp.chinaz.com##.clearfix.wrapperTopBtm
 icp.chinaz.com##span > .wrapperTopBtm
 icp.chinaz.com##.bg-white.auto.fotatxtd
+
+
 ```
