@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxifierProfile version="101" platform="MacOSX" product_id="2" product_minver="200">
+    <Options>
+        <Resolve>
+            <AutoModeDetection enabled="false"/>
+            <ViaProxy enabled="true">
+                <TryLocalDnsFirst enabled="false"/>
+            </ViaProxy>
+            <ExclusionList ExcludeSimpleHostnames="true" ExcludeLocalhost="true" ExcludeSelfHostname="true" ExcludeLocalDomain="true">localhost;%SimpleHostnames%;%ComputerName%;*.local;
+</ExclusionList>
+        </Resolve>
+        <Encryption mode="disabled"/>
+        <HttpProxiesSupport enabled="true"/>
+        <HandleDirectConnections enabled="false"/>
+        <ConnectionLoopDetection enabled="true"/>
+        <ProcessServices enabled="true"/>
+        <ProcessOtherUsers enabled="true"/>
+        <BlockUDP443 enabled="true"/>
+    </Options>
+    <ProxyList>
+        <Proxy id="100" type="SOCKS5">
+            <Address>127.0.0.1</Address>
+            <Port>7897</Port>
+            <Options>256</Options>
+        </Proxy>
+    </ProxyList>
+    <ChainList/>
+    <RuleList>
+        <Rule enabled="true">
+            <Name>block-ms</Name>
+            <Targets>*.sentinelone.net; *.endpoint.security.microsoft.com; *.australiaeast.cloudapp.azure.com; *.events.data.trafficmanager.net</Targets>
+            <Action type="Block"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>block-byte</Name>
+            <Targets>mcs-bd.larkoffice.com; snssdk.com; csp.snssdk.com; mon.snssdk.com; mcs.snssdk.com; mcs.ctobsnssdk.com; mon.zijieapi.com; mcs-bd.feishu.cn; slardar-bd.feishu.cn; ea-sre.bytedance.net; ea-common-test.bytedance.net; api.feelgood.cn; miigo-monitor.bytedance.com; bytehwm.com; internal-api-security.larkoffice.com;</Targets>
+            <Action type="Block"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>block-byte-wildcard</Name>
+            <Targets>*.mcs-bd.larkoffice.com; *.snssdk.com; *.csp.snssdk.com; *.mon.snssdk.com; *.mcs.snssdk.com; *.mcs.ctobsnssdk.com; *.mon.zijieapi.com; *.mcs-bd.feishu.cn; *.slardar-bd.feishu.cn; *.ea-sre.bytedance.net; *.ea-common-test.bytedance.net; *.api.feelgood.cn; *.miigo-monitor.bytedance.com; *.bytehwm.com; *.internal-api-security.larkoffice.com;</Targets>
+            <Action type="Block"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Localhost</Name>
+            <Targets>localhost; 127.0.0.1; ::1; %ComputerName%</Targets>
+            <Action type="Direct"/>
+        </Rule>
+        <Rule enabled="true">
+            <Name>codex</Name>
+            <Applications>codex; Codex; “Codex Helper”; com.openai.codex</Applications>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="false">
+            <Name>curl</Name>
+            <Applications>curl</Applications>
+            <Action type="Proxy">100</Action>
+        </Rule>
+        <Rule enabled="true">
+            <Name>Default</Name>
+            <Action type="Direct"/>
+        </Rule>
+    </RuleList>
+</ProxifierProfile>
